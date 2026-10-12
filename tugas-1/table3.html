@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Table 3</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #888; padding: 10px; text-align: center; }
+    thead th { background-color: #6b7a99; color: white; }
+    tbody td { background-color: #e4f1f2; }
+    .lulus { color: #4a6b5a; font-weight: bold; }
+    .remedial { color: #9b4d4d; font-weight: bold; }
+    .rata { background-color: #e4f1f2 !important; font-weight: bold; font-size: 18px; }
+    .inner-table { border-collapse: collapse; width: 100%; }
+    .inner-table th { background-color: #6b7a99; color: white; padding: 6px; }
+    .inner-table td { background-color: #e4f1f2; padding: 6px; }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="profile.html">Profile</a>
+    <a href="about-me.html">About Me</a>
+    <a href="educations.html">Educations</a>
+    <a href="course-schedule.html">Course Schedule</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="form.html">Form</a>
+    <a href="table1.html">Table 1</a>
+    <a href="table2.html">Table 2</a>
+    <a href="table3.html">Table 3</a>
+  </div>
+
+  <div class="container">
+    <h2>Table 3</h2>
+    <h3>Laporan Nilai Mahasiswa TI-2024</h3>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Nama</th>
+          <th colspan="3">Semester 1</th>
+          <th colspan="3">Semester 2</th>
+          <th rowspan="2">Keterangan</th>
+          <th rowspan="2">Catatan Kehadiran</th>
+        </tr>
+        <tr>
+          <th>Tugas</th><th>UTS</th><th>UAS</th>
+          <th>Tugas</th><th>UTS</th><th>UAS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:left; font-weight:bold;">Park<br>Jeongwoo</td>
+          <td>85</td><td>80</td><td>88</td>
+          <td>90</td><td>85</td><td>92</td>
+          <td class="lulus">Lulus</td>
+          <td>
+            <table class="inner-table" border="1">
+              <tr><th>Bulan</th><th>Hadir</th><th>Izin</th><th>Alpa</th></tr>
+              <tr><td>Agustus</td><td>14</td><td>1</td><td>0</td></tr>
+              <tr><td>September</td><td>13</td><td>0</td><td>1</td></tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:left; font-weight:bold;">Kim<br>Doyoung</td>
+          <td>60</td><td>55</td><td>58</td>
+          <td>65</td><td>60</td><td>62</td>
+          <td class="remedial">Remedial</td>
+          <td style="text-align:left;">Sering terlambat</td>
+        </tr>
+        <tr>
+          <td style="text-align:left; font-weight:bold;">Wanatabe<br>Haruto</td>
+          <td>92</td><td>90</td><td>95</td>
+          <td>94</td><td>91</td><td>96</td>
+          <td class="lulus">Lulus</td>
+          <td style="text-align:left;">Mahasiswa berprestasi</td>
+        </tr>
+        <tr>
+          <td class="rata">Rata-rata<br>Kelas</td>
+          <td colspan="3" class="rata">75,7</td>
+          <td colspan="3" class="rata">79,8</td>
+          <td colspan="2" class="rata">77,8 (keseluruhan)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
